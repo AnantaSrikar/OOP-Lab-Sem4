@@ -5,7 +5,7 @@ class lab4_4 extends Test_package
 {
 	public static void main(String args[])
 	{
-		Test_package tp = new Test_package();
+		lab4_4 tp = new lab4_4();
 
 		System.out.println("tp.a = " + tp.a);
 		// System.out.println("tp.b = " + tp.b); // Wont work because private
