@@ -11,16 +11,23 @@ class lab5_5
 			int b = 1;
 			int c = 1;
 			
-			System.out.println(a);
-			System.out.println(b);
+			if(max_terms == 1)
+				System.out.println(a);
 			
-			for(int i = 2; i < max_terms; i++)
+			else if(max_terms == 2)
 			{
-				c = a + b;
-				a = b;
-				b = c;
-				System.out.println(c);
+				System.out.println(a);
+				System.out.println(b);
 			}
+				
+			else
+				for(int i = 2; i < max_terms; i++)
+				{
+					c = a + b;
+					a = b;
+					b = c;
+					System.out.println(c);
+				}
 		}
 		
 		catch(ArrayIndexOutOfBoundsException e)
